@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+  
+
+    max-width: 11000px;
+    width: 100%;
+    background: linear-gradient(to bottom,/*degradadp*/
+    rgba(250,19,1,.98),
+    rgba(227,57,11,.89),
+    rgba(253,99,13,.99)
+    ),url(../asset/images.jpg);
+    height: 100vh;
+
+}
+
+section{
+    margin: auto;
+
+    width: 100%;
+ 
+
+}
+.titulo{
+    margin: 15px auto;
+    text-align: center;
+
+
+}
+.formulario{
+    margin:auto;
+    width: 30%;
+    height: 350px;
+    padding: 13px;
+    background: #e47023;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(175, 88, 41, 0.4);
+	-moz-box-shadow: 0px 0px 10px 3px rgba(175, 88, 41, 0.4);
+	box-shadow: 0px 0px 10px 3px rgba(175, 88, 41, 0.4);
+}
+
+.formulario input,label,select{
+    width: 100%;
+}
+.formulario input{
+    margin: 15px 0;
+    height: 25px;
+    border-radius: 8px;
+    border: none; 
+    outline: none;
+  
+
+}
+
+.formulario label{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:bolder;
+}
+.formulario button{
+    border-radius: 5px;
+    height: 30px;
+    width: 30%;
+    margin: 10px auto;
+    display: block;  
+    cursor: pointer;
+
+    border: none; 
+
+}
+.formulario button:hover{
+    border: solid 2px rgba(252, 8, 8, 0.8) ;
+}
+.alert{
+    padding: 10px;
+    background: rgb(194, 60, 60);
+}
+.tabla{
+    width: 40%;
+    margin: 120px auto;
+    background: #ff5e01;
+    border: none ;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(107, 69, 49, 0.4);
+	-moz-box-shadow: 0px 0px 10px 3px rgba(107, 69, 49, 0.4);
+	box-shadow: 0px 0px 10px 3px rgba(107, 69, 49, 0.4);
+
+}
+.tabla thead tr th
+{   height: 30px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(205, 50, 50);
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(92, 68, 54, 0.4);
+	-moz-box-shadow: 0px 0px 10px 3px rgba(92, 68, 54, 0.4);
+	box-shadow: 0px 0px 10px 3px rgba(92, 68, 54, 0.4);
+   
+
+}
+.formulario select{
+    margin: 15px 0;
+    height: 25px;
+    border-radius: 8px;
+    border: none; 
+    outline: none;
+  
+}
+a{
+    font-size: 15px;
+   text-decoration:none; 
+
+}
+.tabla tbody tr td{
+    text-align: center;
+}
+
+.block{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    
+}
+div .a{
+margin:15px 10px 0;
+}
+@media screen and (max-width: 700px){
+
+    .formulario{
+       
+        width: 60%;
+    }
+    .tabla{
+        width: 60%;
+        
+    }
+}
+@media screen and (max-width: 500px){
+
+    .formulario{
+       
+        width: 90%;
+    }
+    .tabla{
+        width: 90%;
+        
+    }
+}
