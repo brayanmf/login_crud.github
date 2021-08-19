@@ -1,5 +1,5 @@
 <?php
-require_once "./modelo/user.php";
+require_once "./../modelo/user.php";
 $error=array();/*array para los errores */
 $user=new Usuario;
 if (isset($_POST['ingresar'])){

@@ -1,5 +1,5 @@
 <?php 
-require_once "./modelo/user.php";
+require_once "./../modelo/user.php";
 
 if(isset($_GET['id'])){
     $a=new Usuario;

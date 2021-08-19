@@ -1,5 +1,5 @@
 <?php 
-require_once './modelo/user.php';
+require_once './../modelo/user.php';
 
 $usuarios=new Usuario;
 $a=$usuarios->getdataU();

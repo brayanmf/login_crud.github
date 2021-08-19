@@ -190,13 +190,17 @@ a:hover{
     color: rgba(125, 122, 160, 0.446);
 }
 
-.f a{
+.f1 a,.f a{
     font-size: inherit;
     margin: inherit;
     color: inherit;
 }
 .f a:hover{
-    color: red;
+    color: rgb(140, 27, 27);
+    
+}
+.f1 a:hover{
+    color: rgba(175, 179, 189, 0.487);
     
 }
 

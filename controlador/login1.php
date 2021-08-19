@@ -3,8 +3,8 @@ require_once './modelo/user.php';
 session_start();
 $error=array();/*array para los errores */
 
-if(isset($_SESSION['id'])){/**aca errorrrrr! por que no se que como traer de la base de datos */
-    header ("location: ./panel.php");
+if(isset($_SESSION['id'])){
+    header ("location: ./vista/panel.php");
 }
 
 if(isset($_POST['ingresar'])){/*compruebo si esta definida */
@@ -24,7 +24,7 @@ if(isset($_POST['ingresar'])){/*compruebo si esta definida */
                 $_SESSION['id']=$a['id'];
                 $_SESSION['usuario']=$a['usuario'];
                 $_SESSION['rol']=$a['rol'];
-                header('location: panel.php'); 
+                header('location: vista/panel.php'); 
                 exit();    
   
             }else{
