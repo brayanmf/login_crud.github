@@ -7,7 +7,7 @@ require_once "head.php";
 ?>
 <div class="block">
   <h1>Bienvenido : <?php echo $_SESSION['usuario'] ?></h1>
-  <h1 class="a"><a href="panel.php?cerrar=cerrar">Cerrar Sesion</a> </h1>
+  <h1 class="f"><a href="panel.php?cerrar=cerrar"> &#128100; Cerrar Sesion</a> </h1>
 </div>
 
 
@@ -17,7 +17,7 @@ require_once "head.php";
       <th>Nro</th>
       <th>usuario</th>
       <th>rol</th>
-      <th><a href="crear.php">Crear<i class="fas fa-plus"></i></a></th>
+      <th><a  href="crear.php">Agregar <i class="fas fa-plus"></i></a></th>
      
     </tr>
   </thead>

@@ -20,19 +20,23 @@ if(isset($_SESSION['id'])){/*si el usuario esta logeado me direcciona al form pr
            <h1>Login</h1>
        </div>
     <form action="" class="formulario"   method="post"> 
+        
     <?php if(count($error)>0):?>
-                <div class="alert">
+                <div class="alert caja">
                 <?php foreach($error as $e): ?>
                 <li><?php  echo $e;?> </li>
                 <?php endforeach;/*un foreach para recorrer los errores de del array*/?>
                   </div>
     <?php endif;?>
-        <label>Usuario</label>
-        <input type="text" name="usuario">
-      
-        <label>Contraseña</label>
-        <input type="password" name="contraseña">
-        <button type="submit" name="ingresar">Ingresar</button>
+  
+        <label for="a">Usuario</label>
+        <input id="a" type="text" name="usuario" placeholder="ingrese el usuario">
+       
+
+        <label for="b">Contraseña</label>
+        <input id="b"type="password" name="contraseña" placeholder="ingrese la contraseña">
+    
+        <button class="btn-form" type="submit" name="ingresar" >Ingresar</button>
     </form>
     </section>
  

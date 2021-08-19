@@ -9,7 +9,7 @@ if(isset($_GET['id'])){
     
 if (isset($_POST['ingresar'])){
     if(empty($_POST['usuario'])){
-        $error['email']="requerimos el email";
+        $error['email']="requerimos el usuario";
     }
     if(empty($_POST['contraseña'])){
         $error['pas']="requerimos la contraseña";
@@ -18,7 +18,7 @@ if (isset($_POST['ingresar'])){
     
     if(count($error)==0){
 
-        $user->user=$_POST['usuario'];/*le paso como parametro los pos (solo esto esta modificado si sale mal es por esto) */
+        $user->user=$_POST['usuario'];/* */
         $user->password=$_POST['contraseña'];
         $user->select=$_POST['select'];
         $user->id=$_POST['id'];

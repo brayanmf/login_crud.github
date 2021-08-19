@@ -10,7 +10,7 @@ require('./controlador/crear1.php');
 <?php require_once "head.php"
 ?>
 <body>
-    
+    <a class="bton" href="./panel.php">&#129044;</a>
   <section>
        <div class="titulo">
            <h1>Crear</h1>
@@ -24,11 +24,12 @@ require('./controlador/crear1.php');
                   </div>
     <?php endif;?>
         <label>Usuario</label>
-        <input type="text" name="usuario" >
+        <input type="text" name="usuario" placeholder="ingrese el usuario">
         <label>Contraseña</label>
-        <input type="password" name="contraseña" >
-        <label>rol</label>
-        <select name="select" class="select" ><!--ajax-->
+        <input type="password" name="contraseña" placeholder="ingrese la contraseña">
+        <label >rol  </label>
+        <select id="select"name="select" class="select" ><!--ajax ideal de una db-->
+            <option selected disabled>Seleccione</option>        
             <option>Administrador</option>
             <option>Jefe de Personal</option>
             <option>Usuario</option>
