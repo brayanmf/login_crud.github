@@ -26,7 +26,7 @@ section{
     /*titulo*/
 }
 .titulo{
-    margin: 55px auto;
+    margin: 55px auto auto;
     text-align: center;
     color: #fff;
     font-size: 2.5rem;
@@ -38,11 +38,11 @@ section{
 }
 /*formulario*/
 .formulario{
-    margin: 7% auto 2%;
+    margin: 5% auto 2%;
    
     width: 30%;
-    height: 40%;
-    padding: 15px;
+    height: 80vh;
+    padding: 2%;
     background: #0003042c;
     border-radius: 8px;
     -webkit-box-shadow: 0px 0px 10px 3px rgba(136, 136, 136, 0.4);
@@ -101,7 +101,7 @@ section{
     border-radius: 5px;
     height: 40px;
     width: 40%;
-    margin: 6rem auto;
+    margin: 3rem auto;
     display: block;
     cursor: pointer;
     border: none;
@@ -120,6 +120,7 @@ section{
 
 /*alerta*/
 .alert{
+
     padding: 10px;
     background: rgb(194, 60, 60);
 }
@@ -221,7 +222,7 @@ margin:15px 10px 0;
        
       
         width: 40%;
-        height: 70vh;
+        height: 80vh;
     }
     .tabla{
         width: 90%;

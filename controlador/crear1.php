@@ -7,7 +7,15 @@ if (isset($_POST['ingresar'])){
         $error['email']="requerimos el usuario";
     }
     if(empty($_POST['contraseña'])){
-        $error['pas']="requerimos la contraseña";
+        $error['contra']="requerimos la contraseña";
+    }
+    if(empty($_POST['name'])){
+        $error['name']="requerimos el nombre";
+    }
+
+   
+    if(!isset($_POST['select'])){
+        $error['select']="requerimos un cargo";
     }
   
     if(count($error)==0){
@@ -16,6 +24,7 @@ if (isset($_POST['ingresar'])){
         $user==new Usuario;
         $user->user=$_POST['usuario'];/*le paso como parametro los pos (solo esto esta modificado si sale mal es por esto) */
         $user->password=$_POST['contraseña'];
+        $user->name=$_POST['name'];
         $user->select=$_POST['select'];
         $b=$user->createuser();
         if($b){

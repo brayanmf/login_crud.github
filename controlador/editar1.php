@@ -1,5 +1,5 @@
 <?php
-require_once "./modelo/user.php";
+require_once "./../modelo/user.php";
 $error=array();/*array para los errores */
 $user=new Usuario;
 if(isset($_GET['id'])){
@@ -7,7 +7,10 @@ if(isset($_GET['id'])){
     $usuario=$user->edituser();
     }
     
-if (isset($_POST['ingresar'])){
+if (isset($_POST['editar'])){
+    if(empty($_POST['name'])){
+        $error['name']="requerimos el nombre";
+    }
     if(empty($_POST['usuario'])){
         $error['email']="requerimos el usuario";
     }
@@ -17,7 +20,7 @@ if (isset($_POST['ingresar'])){
    
     
     if(count($error)==0){
-
+        $user->name=$_POST['name'];
         $user->user=$_POST['usuario'];/* */
         $user->password=$_POST['contraseña'];
         $user->select=$_POST['select'];

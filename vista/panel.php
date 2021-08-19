@@ -2,9 +2,17 @@
 <?php 
 session_start();
 require_once "./../controlador/borrar.php";
+
+?>
+<!DOCTYPE html>
+<html lang="es">
+  <?php
 require_once "./head.php";
 
 ?>
+<body>
+  
+
 <div class="block">
 <h1 class="f1" ><a href=""> Ver ventas <i class="fas fa-binoculars"></i></a></h1>
   <h1>Bienvenido : <?php echo $_SESSION['usuario'] ?></h1>
@@ -17,7 +25,9 @@ require_once "./head.php";
     <tr>
       <th>Nro</th>
       <th>usuario</th>
+      <th>Nombre</th>
       <th>rol</th>
+     
       <th><a  href="./crear.php">Agregar <i class="fas fa-user-plus"></i></a></th>
      
     </tr>
@@ -28,5 +38,8 @@ require_once "./head.php";
 require_once "./../controlador/tabla1.php";
 ?>
 </table>
+
+  
+</body>
 
 

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crud</title>
-    <link rel="shortcut icon" href="./../asset/descarga.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./../asset/descargar.ico" type="image/x-icon">
     <meta name="description" content="un crud realizado con poo,mvc"/>
 
     <link rel="stylesheet" href="./../css/style.css">
