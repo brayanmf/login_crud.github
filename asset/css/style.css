@@ -1,0 +1,295 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+  
+    overflow-x: hidden;
+    max-width: 11000px;
+    width: 100%;
+    background: linear-gradient(to bottom,/*degradadp*/
+    rgba(24, 38, 68, 0.98),
+    rgba(53, 58, 191, 0.89),
+    rgba(24, 106, 213, 0.99)
+    ),url(../asset/images.jpg);
+  min-height: 100vh;
+
+}
+
+.canvas{
+
+    margin: 2rem auto auto;
+    width: 90%;
+    background: #fff;
+}
+section{
+    margin: auto;
+
+    width: 100%;
+ 
+
+    /*titulo*/
+}
+.titulo{
+    margin: 55px auto auto;
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    width: 200px;
+	box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
+
+}
+/*formulario*/
+.formulario{
+    margin: 5% auto 2%;
+   
+    width: 30%;
+    height: 80vh;
+    padding: 2%;
+    background: #0003042c;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(136, 136, 136, 0.4);
+	-moz-box-shadow: 0px 0px 10px 3px rgba(136, 136, 136, 0.4);
+	box-shadow: 0px 0px 10px 3px rgba(136, 136, 136, 0.4);
+
+}
+
+.formulario input,label{
+    display:block;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+}
+.formulario select 
+{ font-size: 1.5rem;
+    padding-left: 5px;
+    width: 70%;
+    margin: 1rem 0;
+    height: 3rem;
+    border-radius: 8px;
+    color: #000;
+    border: none; 
+    outline: none;
+  }
+
+.formulario select option{
+    color: #000;
+    
+}
+
+.formulario input{
+    font-size: 1.5rem;
+    padding-left: 5px;
+    width: 100%;
+    margin: 1rem 0;
+    height: 3rem;
+    border-radius: 8px;
+    color: #000;
+    border: none; 
+    outline: none;
+  
+
+}
+
+.formulario input::placeholder {
+
+    font-size: 1.5rem;
+  }
+.formulario label{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:bolder;
+}
+.formulario button{
+    border-radius: 5px;
+    height: 40px;
+    width: 40%;
+    margin: 3rem auto;
+    display: block;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+
+
+}
+.formulario button:hover{
+  background-color: #000;
+  color: #fff;
+
+}
+
+
+
+/*alerta*/
+.alert{
+
+    padding: 10px;
+    background: rgb(194, 60, 60);
+}
+
+/*tabla*/
+.tabla{
+    width: 40%;
+    margin: 120px auto;
+    background: rgba(12, 8, 218, 0.412);
+    border: none ;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.4);
+	-moz-box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.4);
+	box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.4);
+
+}
+.tabla thead tr th
+{  color: #fff;
+     height: 40px;
+    
+    /*border: none;*/
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.631);
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.337);
+	-moz-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.337);
+	box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.337);
+
+
+}
+.tabla tbody tr td{
+    color: rgb(177, 177, 177);
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 30px;
+    text-align: center;
+}
+
+
+
+/*.formulario select{
+    margin: 15px 0;
+    height: 25px;
+    border-radius: 8px;
+
+    border: none; 
+    outline: none;
+  
+}*/
+.bton{
+    display: block;
+    width: 10%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 80px;
+    color: rgba(11, 0, 225);
+    background: rgb(216, 216, 216);
+    border-radius: 10px;
+    margin: 30px;
+}
+a{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+   text-decoration:none; 
+
+}
+a:hover{
+    color: rgba(125, 122, 160, 0.446);
+}
+
+.f1 a,.f a{
+    
+    font-size: inherit;
+    margin: inherit;
+    color: inherit;
+}
+.f a:hover{
+    color: rgb(140, 27, 27);
+    
+}
+.f1 a:hover{
+    color: rgba(175, 179, 189, 0.487);
+    
+}
+
+.block{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    
+}
+div .a{
+margin:15px 10px 0;
+}
+
+@media screen and (min-width: 1200px){
+
+
+    .canvas{
+        height:initial;}
+    .formulario{
+    
+       
+      
+        width: 40%;
+        height: 80vh;
+    }
+    .tabla{
+        width: 90%;
+        
+    }
+}
+@media screen and (max-width: 800px){
+  
+ 
+    .formulario  .select,.select option{
+        font-size: 1rem;
+      
+    }
+
+    .bton{
+        display: block;
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .formulario{
+        height: 70vh;
+        width: 60%;
+    }
+    .tabla{
+        width: 90%;
+        
+    }
+    
+.formulario input::placeholder {
+
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 300px){
+    .formulario .select,.select option{
+        font-size: 1rem;
+        
+    
+      
+    }
+ 
+ 
+    .formulario{
+    
+       
+        width: 90%;
+    }
+    
+.formulario input::placeholder {
+
+    font-size: 1rem;
+  }
+    .tabla{
+        width: 90%;
+        
+    }
+}

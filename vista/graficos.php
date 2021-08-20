@@ -16,7 +16,7 @@ require_once "./head.php";
   </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="./../js/script.js"></script>
+<script src="./../asset/js/script.js"></script>
 
 </body>
   
