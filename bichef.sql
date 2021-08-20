@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-08-2021 a las 06:44:59
+-- Tiempo de generación: 20-08-2021 a las 02:24:41
 -- Versión del servidor: 10.4.19-MariaDB
 -- Versión de PHP: 8.0.7
 
@@ -178,6 +178,7 @@ INSERT INTO `resumen_dia` (`idLocal`, `numeroDia`, `dia`, `monto`, `cantMesas`) 
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
   `usuario` varchar(100) COLLATE utf8mb4_spanish_ci NOT NULL,
+  `nombre` varchar(30) COLLATE utf8mb4_spanish_ci NOT NULL,
   `pass` varchar(250) COLLATE utf8mb4_spanish_ci NOT NULL,
   `rol` varchar(100) COLLATE utf8mb4_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
@@ -186,8 +187,8 @@ CREATE TABLE `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `usuario`, `pass`, `rol`) VALUES
-(1, 'admin', '$2y$10$UthXaR5nAQ8atb/wj8k2UumKaFd6eMpo6EM8Hy9dfMe1IWBgFJICu', 'Administrador');
+INSERT INTO `usuarios` (`id`, `usuario`, `nombre`, `pass`, `rol`) VALUES
+(1, 'admin', 'user-admin', '$2y$10$UthXaR5nAQ8atb/wj8k2UumKaFd6eMpo6EM8Hy9dfMe1IWBgFJICu', 'Administrador');
 
 --
 -- Índices para tablas volcadas
@@ -244,7 +245,7 @@ ALTER TABLE `local`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Restricciones para tablas volcadas

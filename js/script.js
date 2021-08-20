@@ -56,7 +56,7 @@ options: {
   plugins: {
     title: {
       display: true,
-      text: 'Ventas y Cantidad'
+      text: 'Ventas Registradas 2021'
     }
   },
   scales: {
