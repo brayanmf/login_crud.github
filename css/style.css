@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 body{
   
     overflow-x: hidden;
@@ -17,6 +18,12 @@ body{
 
 }
 
+.canvas{
+
+    margin: 2rem auto auto;
+    width: 90%;
+    background: #fff;
+}
 section{
     margin: auto;
 
@@ -182,6 +189,7 @@ section{
     margin: 30px;
 }
 a{
+    cursor: pointer;
     color: rgb(255, 255, 255);
     font-size: 15px;
    text-decoration:none; 
@@ -192,6 +200,7 @@ a:hover{
 }
 
 .f1 a,.f a{
+    
     font-size: inherit;
     margin: inherit;
     color: inherit;
@@ -214,9 +223,12 @@ a:hover{
 div .a{
 margin:15px 10px 0;
 }
+
 @media screen and (min-width: 1200px){
 
 
+    .canvas{
+        height:initial;}
     .formulario{
     
        
@@ -230,6 +242,8 @@ margin:15px 10px 0;
     }
 }
 @media screen and (max-width: 800px){
+  
+ 
     .formulario  .select,.select option{
         font-size: 1rem;
       

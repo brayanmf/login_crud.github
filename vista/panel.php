@@ -14,7 +14,7 @@ require_once "./head.php";
   
 
 <div class="block">
-<h1 class="f1" ><a href=""> Ver ventas <i class="fas fa-binoculars"></i></a></h1>
+<h1 class="f1" ><a href="./graficos.php"> Ver ventas <i class="fas fa-binoculars"></i></a></h1>
   <h1>Bienvenido : <?php echo $_SESSION['usuario'] ?></h1>
   <h1 class="f"><a href="panel.php?cerrar=cerrar"> &#128100; Cerrar Sesion</a> </h1>
 </div>
